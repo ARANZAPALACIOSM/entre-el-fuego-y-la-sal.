@@ -1,0 +1,4 @@
+Muestras del banco FluidR3 GM de Frank Wen, preparadas en MP3 por Gleitz para MIDI.js Soundfonts.
+Fuente: https://github.com/gleitz/midi-js-soundfonts/tree/gh-pages/FluidR3_GM
+Licencia CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+Se seleccionaron quince muestras. El sitio aplica envolventes de volumen y trémolo al reproducirlas.

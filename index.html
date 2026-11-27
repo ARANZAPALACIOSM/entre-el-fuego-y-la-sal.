@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1705bc">
+  <title>Entre el fuego y la sal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="portada" aria-labelledby="titulo">
+      <div class="cabecera">
+        <svg class="pinceladas" viewBox="0 0 1475 575" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <image id="arte-fondo" href="assets/grano.svg" width="1475" height="1067"/>
+            <pattern id="textura-azul" width="840" height="540" patternUnits="userSpaceOnUse">
+              <svg width="420" height="270" viewBox="35 45 420 270"><use href="#arte-fondo"/></svg>
+              <svg x="420" width="420" height="270" viewBox="35 45 420 270" transform="translate(1260 0) scale(-1 1)"><use href="#arte-fondo"/></svg>
+              <svg y="270" width="420" height="270" viewBox="35 45 420 270" transform="translate(0 810) scale(1 -1)"><use href="#arte-fondo"/></svg>
+              <svg x="420" y="270" width="420" height="270" viewBox="35 45 420 270" transform="translate(1260 810) scale(-1 -1)"><use href="#arte-fondo"/></svg>
+            </pattern>
+            <mask id="sin-cintillo" maskUnits="userSpaceOnUse" x="0" y="0" width="1475" height="575">
+              <rect width="1475" height="575" fill="white"/>
+              <path d="M99 446 636 367 649 471 110 545Z" fill="black"/>
+            </mask>
+            <clipPath id="zona-pinceladas">
+              <path d="M7 2H697L714 24 708 48 719 72 735 113 753 158 764 184 765 202 749 219 738 235 735 253 718 266 697 281 679 295 656 319 640 344 633 364 634 385 643 403 655 419 668 442 665 463 650 481 645 501 643 511 605 503 570 511 530 500 496 494 455 510 409 507 374 516 305 511 245 509 277 490 604 447 637 424 638 391 627 369 559 384 400 402 260 421 116 447 102 462 98 483 58 486 7 495Z
+                       M804 2H1475V402L1427 425 1380 447 1332 463 1286 475 1246 496 1208 519 1168 552 1138 557 1090 558 1035 563 985 554 939 549 896 544 856 526 821 507 773 496 719 503 672 512 675 489 685 470 691 446 683 420 667 398 660 381 661 362 675 345 701 323 735 296 755 311 782 320 807 313 801 333 811 350 844 346 879 318 903 303 945 312 1005 297 1041 291 1094 278 1126 267 1147 251 1154 230 1147 211 1132 194 1103 181 1062 172 1020 170 987 175 983 165 978 159 964 158 943 175 927 144 903 111 884 87 859 61 837 35Z"/>
+            </clipPath>
+          </defs>
+          <rect width="1475" height="575" fill="url(#textura-azul)"/>
+          <use href="#arte-fondo" clip-path="url(#zona-pinceladas)" mask="url(#sin-cintillo)"/>
+        </svg>
+        <h1 id="titulo"><span class="entre">Entre el</span> <span class="fuego">Fuego</span> <span class="sal">y la sal</span></h1>
+        <p class="cintillo">El antojo toma vuelo</p>
+      </div>
+      <div class="introduccion">
+        <div class="papel" aria-hidden="true"></div>
+        <img class="papa" src="assets/papa.png" alt="">
+        <div class="texto">
+          <p>Estás frente al anaquel. Ves las papas de siempre, pero una bolsa de chile te llama la atención.</p>
+          <p class="pregunta"><strong>¿Ya se te antojaban unas papas picantes o se te antojaron al verlas?</strong></p>
+          <p>En este recorrido vas a explorar qué sabores despiertan interés en México y seguir el vuelo de una mariposa monarca entre la sal y el chile. Tú decides dónde aterriza tu antojo.</p>
+          <button type="button" id="empezar">Empezar el recorrido <span aria-hidden="true">⟶</span></button>
+        </div>
+      </div>
+      <svg class="estela" aria-hidden="true">
+        <defs>
+          <marker id="punta" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="17" refX="12" refY="8.5" orient="auto">
+            <path d="M1 1 14 8.5 1 16 4 8.5Z" fill="#fff1ae"/>
+          </marker>
+        </defs>
+        <path id="recorrido" fill="none" stroke="#fff1ae" stroke-width="4" stroke-dasharray="10 6" stroke-linecap="round" marker-end="url(#punta)"/>
+      </svg>
+      <div class="monarca" aria-hidden="true"><img src="assets/monarca.png" alt=""></div>
+    </section>
+    <section class="botana" id="la-botana" aria-labelledby="titulo-botana">
+      <svg class="azul-impreso" viewBox="35 45 420 270" preserveAspectRatio="none" aria-hidden="true"><use href="#arte-fondo"/></svg>
+      <header class="titular-botana">
+        <h2 id="titulo-botana" tabindex="-1">
+          <span class="titulo-papel"><span>La botana no es</span></span>
+          <span class="titulo-producto">un producto</span>
+        </h2>
+        <p class="titulo-crema">Es una conversación de millones.</p>
+      </header>
+
+      <aside class="total-menciones" aria-label="Total de menciones">
+        <strong>4.63 M</strong>
+        <span>menciones analizadas</span>
+      </aside>
+
+      <div class="sentimiento" aria-labelledby="titulo-sentimiento">
+        <header class="encabezado-sentimiento">
+          <h3 id="titulo-sentimiento">Distribución de sentimiento</h3>
+          <p>La longitud indica cu<span class="acento-sentimiento">á</span>ntas menciones hubo</p>
+        </header>
+        <div class="lienzo-sentimiento">
+          <svg class="estela-entrada" aria-hidden="true">
+            <path class="vuelo-entrada" fill="none" stroke="#fff0b9" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7"/>
+            <path class="estela-al-origen" fill="none" stroke="#fff0b9" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7"/>
+          </svg>
+          <button type="button" class="origen-sentimiento" aria-expanded="false" aria-controls="categorias-sentimiento">
+            <span class="punto-sentimiento" aria-hidden="true"></span>
+            <span class="indicio-sentimiento">Acércate para ver los datos</span>
+          </button>
+          <div class="categorias-sentimiento" id="categorias-sentimiento" inert>
+            <button type="button" class="categoria neutrales" data-menciones="2880000" aria-pressed="false">
+              <span class="brazo" aria-hidden="true"><span class="barra"></span></span>
+              <span class="etiqueta-sentimiento">
+                <strong class="cifra">2.88 M</strong>
+                <b>Neutrales</b>
+                <span>Información, reseñas, ubicaciones y consumo cotidiano.</span>
+              </span>
+            </button>
+            <button type="button" class="categoria positivas" data-menciones="968700" aria-pressed="false">
+              <span class="brazo" aria-hidden="true"><span class="barra"></span></span>
+              <span class="etiqueta-sentimiento">
+                <strong class="cifra">968.7 mil</strong>
+                <b>Positivas</b>
+                <span>Placer, antojo, recomendación y experiencia compartida.</span>
+              </span>
+            </button>
+            <button type="button" class="categoria negativas" data-menciones="776900" aria-pressed="false">
+              <span class="brazo" aria-hidden="true"><span class="barra"></span></span>
+              <span class="etiqueta-sentimiento">
+                <strong class="cifra">776.9 mil</strong>
+                <b>Negativas</b>
+                <span>Fricciones de servicio, espera, precio o calidad.</span>
+              </span>
+            </button>
+          </div>
+          <img class="monarca-entrada" src="assets/monarca.png" alt="">
+        </div>
+      </div>
+      <img class="botana-papa" src="assets/papa.png" alt="">
+      <footer class="cierre-botana">
+        <p class="menciones-mes"><strong>Alrededor de 150 mil menciones al mes</strong><span>sobre botanas y sus marcas</span></p>
+      </footer>
+    </section>
+    <section class="interludio" id="interludio" aria-labelledby="frase-interludio">
+      <svg class="interludio-azul" viewBox="35 45 420 270" preserveAspectRatio="none" aria-hidden="true"><use href="#arte-fondo"/></svg>
+      <div class="trama-interludio" aria-hidden="true"></div>
+      <div class="chile-interludio" aria-hidden="true"></div>
+      <img class="sal-borde-interludio" src="assets/grano.svg#interludio-sal" alt="">
+      <img class="papa-borde-interludio" src="assets/papa.png" alt="">
+      <h2 class="frase-interludio" id="frase-interludio">
+        <span class="renglon-interludio renglon-sal">
+          <span class="recorte-interludio">Las de</span>
+          <span class="palabra-interludio palabra-sal">SAL,</span>
+          <img class="cristales-interludio" src="assets/grano.svg#interludio-sal" alt="">
+        </span>
+        <span class="renglon-interludio renglon-pican">
+          <span class="recorte-interludio">las que</span>
+          <span class="palabra-interludio palabra-pican">PICAN</span>
+        </span>
+        <span class="renglon-interludio renglon-cruje">
+          <span class="recorte-interludio antes-cruje">y todo lo que</span>
+          <span class="palabra-interludio palabra-cruje">CRUJ<span class="e-cruje">E<span class="base-cruje" aria-hidden="true"></span></span></span>
+          <span class="recorte-interludio despues-cruje">en medio<span class="punto-interludio">.</span></span>
+        </span>
+      </h2>
+      <svg class="estela-interludio" aria-hidden="true">
+        <path fill="none" stroke="#fff0b9" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="10 8"/>
+      </svg>
+      <img class="monarca-interludio" src="assets/grano.svg#interludio-monarca" alt="">
+      <div class="migas-interludio" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+    <section class="antojo-anual" id="antojo-anual" aria-labelledby="titulo-antojo-anual">
+      <svg class="antojo-azul" viewBox="35 45 420 270" preserveAspectRatio="none" aria-hidden="true"><use href="#arte-fondo"/></svg>
+      <header class="antojo-titular">
+        <h2 id="titulo-antojo-anual"><span>El antojo,</span><strong>año con año</strong></h2>
+        <p><span>Algunos sabores siguen dando de qué hablar, mientras otros van ganando terreno.</span> <span>Abre una bolsa y descubre cómo cambiaron las menciones de cada sabor entre 2024 y 2026.</span></p>
+      </header>
+      <div class="escena-anaquel">
+        <div class="puente-antojo" hidden aria-hidden="true"></div>
+        <section class="papel-antojo" id="tendencia-sabor" aria-labelledby="titulo-tendencia" inert>
+          <div class="contenido-antojo">
+            <h3 id="titulo-tendencia"></h3>
+            <p>Menciones estimadas por año</p>
+            <div class="grafica-antojo">
+              <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path class="reticula-antojo" d="M0 26H100 M0 54H100 M0 82H100"/>
+                <path class="linea-antojo" pathLength="1"/>
+              </svg>
+              <ol class="valores-antojo"></ol>
+              <div class="vuelo-sonoro" aria-hidden="true">
+                <img src="assets/monarca.png" alt="">
+              </div>
+            </div>
+            <button class="escuchar-sabor" type="button">▶ Escuchar este sabor</button>
+            <p class="solo-lectores" aria-live="polite"></p>
+          </div>
+        </section>
+        <aside class="control-anaquel">
+          <h3>Así suena el antojo</h3>
+          <button class="escuchar-anaquel" type="button">▶ Escuchar todo el anaquel</button>
+          <p class="anio-sonoro" aria-live="polite"></p>
+        </aside>
+        <div class="desplazamiento-anaquel">
+          <div class="fila-bolsas" role="group" aria-label="Sabores de papas"></div>
+        </div>
+      </div>
+    </section>
+    <section class="resumen-sabores" id="resumen-sabores" aria-label="Resumen de tendencias por sabor">
+      <svg class="resumen-sabores-azul" viewBox="35 45 420 270" preserveAspectRatio="none" aria-hidden="true"><use href="#arte-fondo"/></svg>
+      <ol class="tarjetas-sabores">
+        <li class="resumen-queso">
+          <strong>49.5K</strong>
+          <p>Menciones estimadas de queso en 2025, su pico anual.</p>
+        </li>
+        <li class="resumen-chile">
+          <strong>34.7K</strong>
+          <p>Menciones estimadas de chile en 2025. El picor sigue siendo estructural.</p>
+        </li>
+        <li class="resumen-flamin">
+          <strong>10.6K</strong>
+          <p>Menciones estimadas de Flamin’ Hot en 2026, casi duplicando 2024.</p>
+        </li>
+      </ol>
+      <p class="conclusion-sabores">En conversación estimada, queso y chile son pilares consolidados. Sin embargo, Flamin’ Hot y Chamoy revelan una transición hacia sabores extremos, ácidos e hiperestimulantes.</p>
+    </section>
+    <section class="aterriza" id="donde-aterriza" aria-labelledby="titulo-aterriza">
+      <div class="aterriza-azul" aria-hidden="true">
+        <svg viewBox="35 45 420 270" preserveAspectRatio="none"><use href="#arte-fondo"/></svg>
+      </div>
+      <img class="aterriza-papa-superior" src="assets/papa.png" alt="">
+      <h2 id="titulo-aterriza">¿Dónde aterriza<br>
+        tu <span>antojo?</span></h2>
+      <div class="aterriza-inicio">
+        <img src="assets/monarca.png" alt="">
+        <p>Lo que ya se te antojaba</p>
+      </div>
+      <p class="aterriza-reflexion">Al empezar este proyecto, quería saber qué sabores de papas daban más de qué hablar en México. Cuando llevé los datos al diseño, me quedé pensando en algo que me pasa frente al anaquel: a veces llego con un sabor en mente y una bolsa que me llama la atención me hace considerar otro. Por eso elegí a la monarca. Su vuelo me permitió representar ese cambio de rumbo, y el ala que se convierte en papa hace visible el momento en que el antojo aterriza. Las menciones me ayudaron a ver qué sabores aparecen en la conversación. Diseñar el recorrido me hizo entender que la forma de mostrar una opción también influye en lo que nos detenemos a mirar.</p>
+      <div class="aterriza-remate">
+        <img class="aterriza-papa-lateral" src="assets/papa.png" alt="">
+        <p class="aterriza-atencion">Lo que te llam<span>ó</span> la atenci<span>ó</span>n</p>
+        <svg class="aterriza-estela" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M250 180 C375 176 342 216 379 270 S501 399 599 434" fill="none" stroke="#fff3cf" stroke-width="12" stroke-linecap="round"/>
+          <path d="M250 180 C375 176 342 216 379 270 S501 399 599 434" fill="none" stroke="#1b0bb7" stroke-width="5" stroke-dasharray="11 10" stroke-linecap="round"/>
+          <path d="m583 418 25 18-31 7" fill="#1b0bb7" stroke="#fff3cf" stroke-width="3" stroke-linejoin="round"/>
+          <path d="m344 197 0-22m8 26 12-20m-5 25 20-10" fill="none" stroke="#ff570d" stroke-width="5" stroke-linecap="square"/>
+        </svg>
+        <p class="aterriza-conclusion">Entre lo que ya se te antojaba<br> y lo que te llamó la atención,<br> tu antojo puede <span>cambiar de rumbo.</span></p>
+        <img class="aterriza-monarca-final" id="monarca-final" src="assets/monarca-ala-papa.png" alt="Monarca con un ala de papa ondulada">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
